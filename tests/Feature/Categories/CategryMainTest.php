@@ -13,7 +13,7 @@ class CategryMainTest extends TestCase
 
 
         $response = $this->get('category/index');
-        // $response->assertStatus(200);
+        $response->assertStatus(200);
         $response->assertJson([
 
             [
